@@ -1,0 +1,64 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+main
+{
+  display: grid;
+  grid-template-columns: 450px 1fr;
+  gap: 64px;
+  text-align: left;
+}
+
+form 
+{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h1
+{
+  font-size: 2em;
+  line-height: 1.1;
+  margin: 0;
+
+}
+
+h2
+{
+  font-size: 1.1em;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0;
+}
+
+label
+{
+  font-size: 0.8em;
+  margin-bottom: 1rem;
+}
+
+input
+{
+  background: #222;  
+  border-radius: 4px;
+  cursor: default;
+  border: 1px solid #555;
+  display: block;
+  margin-bottom: .4rem;
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 80%;
+}
+
+.smallbutton
+{
+  font-size: .6rem;
+  margin-left: .5rem;
+}
