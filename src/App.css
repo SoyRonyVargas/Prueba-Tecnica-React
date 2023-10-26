@@ -44,6 +44,11 @@ label
   margin-bottom: 1rem;
 }
 
+ul
+{
+  padding: 15px;
+}
+
 input
 {
   background: #222;  
@@ -61,4 +66,9 @@ input
 {
   font-size: .6rem;
   margin-left: .5rem;
+}
+
+p
+{
+  margin: 0;
 }

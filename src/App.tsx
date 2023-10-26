@@ -71,7 +71,7 @@ function App() {
 
   return (
     <main>
-      <aside>
+      <aside> 
         <h1>Mi prueba tecnica nivel Senior</h1>
         <h2>Añadir elementos</h2>
         <form action="" onClick={ handleSubmit }>
@@ -92,18 +92,24 @@ function App() {
         
         <h2>Lista de elementos</h2>
 
-        <ul>
           {
-            items.map( item => (
+            items.length === 0 
+            ?
+            <p>No hay elementos</p>
+            :
+            (
+              <ul>
+              {items.map( item => (
               <li key={item.id}>
                 { item.text }
                 <button className='smallbutton' onClick={handleDelete(item.id)}>
                   Eliminar
                 </button>
               </li>
-            ))
-          }
+            ))}
         </ul>
+            )
+          }
 
       </section>
 
