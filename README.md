@@ -1,3 +1,2 @@
-# React + TypeScript + Vite
+# Prueba tecnica de React con Typescript
 
-Prueba tecnica de React con Typescript
