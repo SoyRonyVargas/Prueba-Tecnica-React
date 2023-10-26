@@ -63,7 +63,7 @@ function App() {
 
   }
 
-  const handleDelete = ( id : Item["id"] ) => {
+  const handleDelete = ( id : Item["id"] ) => () => {
 
     setItems( items => items.filter( item => item.id !== id ) )
 
@@ -97,7 +97,7 @@ function App() {
             items.map( item => (
               <li key={item.id}>
                 { item.text }
-                <button className='smallbutton' onClick={() => handleDelete(item.id)}>
+                <button className='smallbutton' onClick={handleDelete(item.id)}>
                   Eliminar
                 </button>
               </li>
